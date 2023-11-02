@@ -1,0 +1,56 @@
+.w-fc{
+    width: fit-content;
+}
+.section1Img{
+    background-image: url('./Images/Rick.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media (min-width: 700px) {
+    .menu-ms{
+        display: none !important;
+    }
+    .section1, footer > div, .infos {
+        flex-direction: row;
+        
+    }
+}
+@media (max-width: 699px) {
+    .section1, footer > div, .facilities, .moreStory, .infos{
+        flex-direction: column;
+    }
+    article {
+        text-align: center;
+    }
+    .section1 > div, footer > div, .facilities > div, .moreStory > div, .infos > div {
+        width: 100% !important;
+    }
+    .section1 > div > h1, .section1 > div > p {
+        text-align: center;
+        width: 100% !important;
+    }
+    .menu-l{
+        display: none !important;
+    }
+    .buttons{
+        width: 100% !important;
+    }
+    .doctors > div{
+        width: 85% !important;
+    }
+}
+.infoDiv, .moreStoryImg{
+    background-image: url('./Images/Rick.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.facilitiesLink:hover{
+    border-right: 4px solid red;
+    border-top-left-radius: 10px;
+    background: rgba(247, 58, 58, 0.683);
+    color: white;
+}
